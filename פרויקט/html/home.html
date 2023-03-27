@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="shortcut icon" href="../images/logo.png">
+  <title>משחקים</title>
+</head>
+
+<body dir="rtl">
+  
+  <div id="sigh-up" class="forms">
+    <div id="form1" class="modal">
+      <form onsubmit="return false" class="modal-content">
+        <h2>הירשם כדי להיכנס</h2>
+        <p id="exist">שם המשתמש הזה כבר קיים במערכת,<br>אנא הכנס שם חדש</p>
+        <p>מלא את הטופס הבא כדי ליצור חשבון:</p>
+        <label for="name"><b>שם משתמש</b></label><br>
+        <input type="text" placeholder="Enter name" name="name" id="name1" required><br>
+        <label for="email"><b>מייל</b></label><br>
+        <input type="email" placeholder="Enter Email" name="email" id="email1" required>
+        <br>
+        <label for="psw"><b>סיסמא</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" id="password1" required>
+        <br>
+      
+
+        <p>על ידי יצירת חשבון אתה מסכים לתנאים ונהלים של האתר.</p>
+        <p> אם יש לך כבר חשבון<span id="connect"> לחץ כאן </span> כדי להתחבר</p>
+        <div id="clearfix">
+          <button class="button1" type="submit"  id="signupbtn">הירשם</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="log-in" class="forms">
+    <div id="form2" class="modal">
+      <form onsubmit="return false"  class="modal-content" action="/action_page.php">
+        <h2>התחבר כדי להיכנס</h2>
+        <p id="wrongAccount">השם משתמש או הסיסמה אינם תקינים</p>
+        <label for="name"><b>שם משתמש</b></label><br>
+        <input type="text" placeholder="Enter name" name="name" id="name2" required><br>
+        <label for="psw"><b>סיסמא</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" id="password2" required>
+        <br>
+
+          <p>אין לך עדין חשבון? </p><p id="returnToForm1">הירשם עכשיו!⬅️</p>
+        <div id="clearfix">
+          <button type="submit" id="loginbtn" class="button1">התחבר</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="page">
+  <header>
+   
+    <a href="#jump"> <img id="gif" src="../images/gif arrow.webp" alt="גיפ חץ קופץ:)"></a>
+  </header>
+  <div id="jump"></div>
+  <p id="exitAccount" >יציאה מהחשבון</p>
+  <h3 id="hello"></h3>
+  <h1>בחר משחק</h1>
+  <main id="main" dataData="true">
+
+    <div class="games" id="snake">
+      <img class="image" src="../images/snake.jpg">
+      <a  href="../html/SiteUnderRenovation.html"> <button class="button">התחל לשחק</button></a>
+    </div>
+    <div class="games" id="memory-game">
+
+      <img class="image" src="../images/memory game.gif">
+      <a  href="../html/levels.html"><button   class="button">התחל לשחק</button></a>
+
+    </div>
+    <div class="games" id="candy-crush">
+
+      <img class="image" src="../images/candy crush.jpg">
+      <a  href="../html/SiteUnderRenovation.html"> <button class="button">התחל לשחק</button></a>
+    </div>
+    <div class="games" id="resturant">
+
+      <img class="image" src="../images/resturant.jpg">
+      <a  href="../html/SiteUnderRenovation.html"> <button class="button">התחל לשחק</button></a>
+    </div>
+  </main>
+</div>
+  <script src="../js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/all.min.css">
+   <link rel="stylesheet" href="../css/levels.css">
+   <link rel="shortcut icon" href="../images/logo.png">
+
+
+   <title>שלבים</title>
+</head>
+
+<body dir="rtl">
+   <div id="instructions">
+      <button id="x">x</button>
+      <h1>הוראות משחק הזיכרון:</h1>
+      <p>ברגע הכניסה למשחק הטיימר מתחיל<br> והינך צריך למצוא את כל הזוגות עד שנגמר הטיימר.<br> ישנם שלושה שלבים:
+         <br>בשלב הראשון -טיימר של 10 שניות ו4 כרטיסים.<br> בשלב השני -טיימר של 50 שניות ו-16 כרטיסים.
+         <br>בשלב השלישי-טיימר של שתי דקות ו-36 כרטיסים.<br>
+         בשלבים 2 ו-3 יש אפשרות לרמז פעם אחת במשחק,<br>
+         בלחיצה על כפתור הרמז כל הכרטיסים שעדין לא גולו יתהפכו לשניה ויתהפכו לאחר מכן בחזרה
+      </p>
+   </div>
+   <div id="body">
+      <h1 id="title">בחר שלב</h1>
+      <a href="../html/home.html"><i class="fas fa-home" id="home"></i>
+      </a>
+      <p id="homePage">לדף הבית</p>
+      <div id="levels">
+         <a href="../html/game.html?dimention=2"><img id="level1" class="levels" src="../images/1.gif" alt="שלב 1"></a>
+         <a href="../html/game.html?dimention=4"><img id="level2" class="levels" src="../images/2.gif" alt="שלב 2"></a>
+         <a href="../html/game.html?dimention=6"><img id="level3" class="levels" src="../images/3.gif" alt="שלב 3"></a>
+      </div>
+   </div>
+
+
+   <script src="../js/levels.js"></script>
+</body>
+
+</html>

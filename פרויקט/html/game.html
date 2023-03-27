@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <title>games</title>
+</head>
+
+<body dir="rtl">
+
+    <div id="lose">
+        <audio autoplay>
+            <source src="../audio/lose.mp3" type="mp3">
+        </audio>
+        <img class="img" src="../images/lose.png">
+        <!-- <img class="gif" src="../images/gif lose.gif"> -->
+
+        <p class="wins">סך הניצחונות שלך הוא:<span id="numberWins1"></span></p>
+        <a href="../html/levels.html"><button class="button">התחל משחק חדש</button></a>
+    </div>
+
+
+
+    <div id="win">
+        <audio autoplay>
+            <source src="../audio/game-win.mp3" type="mp3">
+        </audio>
+        <img class="img" src="../images/winnn.png">
+        <!-- <img class="gif" src="../images/gif wins.gif"> -->
+        <p class="wins">סך הניצחונות שלך הוא:<span id="numberWins2"></span></p>
+        <a href="../html/levels.html"><button class="button">התחל משחק חדש</button></a>
+    </div>
+
+    <div id="page">
+        <div class="game">
+            <div class="controls">
+                <div id="stats">
+                    <div class="moves"><span id="couples">0</span> זוגות</div>
+                    <div class="timer">זמן:<span id="timer"> </span> </div>
+                    <i class="fas fa-lightbulb" id="on"></i>
+                    <i class="far fa-lightbulb" id="off"></i>
+                </div>
+            </div>
+        </div>
+        <div id="board-container">
+
+        </div>
+    </div>
+
+    </div>
+    <script src="../js/game.js"></script>
+</body>
+
+</html>

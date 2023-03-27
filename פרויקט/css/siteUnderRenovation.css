@@ -1,0 +1,41 @@
+@font-face {
+    font-family: font;
+    src: url(../fonts/SecularOne-Regular.ttf);
+}
+
+body{
+    background-image: url(../images/רקע\ לשיפוצים!.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:font;
+}
+p{
+    margin-top: 7vw;
+    font-size:5vw;
+    text-align: center;
+    color: #eeeeee;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  
+}
+#arrow{
+    width: 7vw;
+    height: auto;
+    margin-top: 1vw;
+    margin-right: 47%;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(255, 226, 34));
+    filter: drop-shadow(5px 5px 5px rgb(252, 40, 220));
+  
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #e979fb, 0 0 20px #f9177d, 0 0 30px #17f917, 0 0 40px #eef917, 
+                   0 0 50px #da1414, 0 0 60px #1fa6db, 0 0 70px #da7d14;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #321cfb, 0 0 40px #0dffdf, 0 0 50px #6814e6, 
+                   0 0 60px #1aef93, 0 0 70px #d7ed14, 0 0 80px #e209e9;
+    }
+  }

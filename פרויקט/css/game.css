@@ -1,0 +1,172 @@
+@font-face {
+    font-family: font;
+    src: url(../fonts/SecularOne-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    opacity: 1;
+    font-family: font;
+    background-image: url(../images/background\ game.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#board-container {
+    margin:0px;
+    background-image: url(../images/background\ board.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 4px 4px black;
+    display: grid;
+    border-radius: 10px;
+    padding:2vw ;
+    grid-row-gap:2vw; 
+    grid-column-gap:0vw;
+    justify-content: space-around;
+    font-size:7.5vw;
+}
+
+.card {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    margin: 3px;
+    text-align: center;
+    justify-self: center;
+  
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: black;
+    font-size: 60px;
+    border-radius: 7px;
+
+}
+
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 7px;
+}
+
+.flip-card {
+    transform: rotateY(180deg);
+}
+
+
+
+#stats {
+    margin-right: 1%;
+    font-size: 2vw;
+    background-color: white;
+    width: 15vw;
+    height: auto;
+    border-radius: 10px;
+    padding: 1vw;
+    box-shadow: 0 0 30px 12px black;
+}
+span{
+  
+    margin: 0px;
+}
+.card-none{
+    opacity: 0.3;
+}
+#lose{
+    margin-top: 1vw;
+    background-color:rgb(3, 2, 9);
+    display: none;
+    position: fixed;
+    width: 30%;
+    margin-right: 35%;
+    height: auto;
+    z-index: 1;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 0 30px 12px black;
+}
+#win{
+    margin-top: 1vw;
+    background-color:rgb(3, 2, 9);
+    display: none;
+    position: fixed;
+    width: 30%;
+    margin-right: 35%;
+    height: auto;
+    z-index: 1;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 0 30px 12px black;
+}
+.return{
+    margin-bottom: 10px;
+}
+.img{
+    width: 100%;
+    border-radius: 7px;
+
+}
+.gif{
+    width: 50%;
+
+}
+
+.wins{
+    color: white;
+    font-size:2vw;
+
+}
+.button{
+    font-size:2vw;
+    width: 80%;
+    height: 10%;
+    border-radius: 4px;
+    margin-bottom:1vw ;
+    font-weight: bolder;
+}
+.button:hover{
+    background-color: rgb(46, 107, 237);
+}
+#on{
+    font-size: 2vw;
+    color:black;
+    display:none ;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  
+}
+#off{
+    font-size: 2vw;
+    color:black; 
+    display: none;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #f9177d, 0 0 30px #f9177d, 0 0 40px #f9177d, 
+                 0 0 50px #da7d14, 0 0 60px #da7d14, 0 0 70px #da7d14;
+  }
+  to {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #fbe11c, 0 0 40px #daec16, 0 0 50px #dce614, 
+                 0 0 60px #efda1a, 0 0 70px #d7ed14, 0 0 80px #d2e909;
+  }
+}
+
