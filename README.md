@@ -1,2 +1,1 @@
-# tzivi
-memory game
+# memory game
